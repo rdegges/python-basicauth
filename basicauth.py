@@ -5,6 +5,10 @@ from base64 import b64decode, b64encode
 from urllib import quote, unquote
 
 
+class DecodeError(Exception):
+    pass
+
+
 def encode(username, password):
     """Returns an HTTP basic authentication encrypted string given a valid
     username and password.
