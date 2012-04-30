@@ -1,0 +1,3 @@
+# Ignore packaging stuff:
+dist
+*.egg-info
