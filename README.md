@@ -4,6 +4,9 @@ A dead simple HTTP basic auth encoder and decoder. Why? Because HTTP should be
 drop dead easy. That's why.
 
 
+![HTTP Basic Auth?!](https://github.com/rdegges/python-basicauth/raw/master/http_basic_auth.jpg)
+
+
 ## Install
 
 To install ``python-basicauth``, simply run ``pip install basicauth`` and
