@@ -1,0 +1,2 @@
+include README.md tests.py UNLICENSE
+recursive-exclude basicauth *.pyc
