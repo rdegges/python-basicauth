@@ -8,7 +8,7 @@ setup(
     # Basic package information:
     name = 'basicauth',
     version = '0.1',
-    packages = ('basicauth',),
+    py_modules = ('basicauth',),
 
     # Packaging options:
     zip_safe = False,
