@@ -58,6 +58,10 @@ Traceback (most recent call last):
 basicauth.DecodeError
 ```
 
+**NOTE**: The [HTTP Basic Authentication spec](http://www.ietf.org/rfc/rfc2617.txt)
+doesn **NOT** allow you to include any colon characters (`:`) in the username
+field.  Colons are allowed in the password field -- but that's it.
+
 
 ## Tests
 
