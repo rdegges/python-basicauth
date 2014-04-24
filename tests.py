@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from basicauth import decode, DecodeError, encode
+from base64 import b64encode
 
 
 class Encode(TestCase):
@@ -55,6 +56,7 @@ class Decode(TestCase):
         self.assertRaises(DecodeError, decode, encoded_str)
 
     def test_properly_escapes_colons(self):
-        username, password = 'user:name:', 'pass:word:'
-        encoded_str = encode(username, password)
+        username, password = 'username', 'pass:word:'
+        # client may not have been encoded the way this lib does it
+        encoded_str = 'Basic %s' % b64encode('%s:%s' % (username, password))
         self.assertEqual((username, password), decode(encoded_str))

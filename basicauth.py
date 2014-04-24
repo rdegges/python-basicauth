@@ -27,7 +27,7 @@ def decode(encoded_str):
     # directly.
     if len(split) == 1:
         try:
-            username, password = b64decode(split[0]).split(':')
+            username, password = b64decode(split[0]).split(':', 1)
         except:
             raise DecodeError
 
@@ -37,7 +37,7 @@ def decode(encoded_str):
     elif len(split) == 2:
         if split[0].strip().lower() == 'basic':
             try:
-                username, password = b64decode(split[1]).split(':')
+                username, password = b64decode(split[1]).split(':', 1)
             except:
                 raise DecodeError
         else:
