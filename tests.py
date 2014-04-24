@@ -1,7 +1,7 @@
+from base64 import b64encode
 from unittest import TestCase
 
 from basicauth import decode, DecodeError, encode
-from base64 import b64encode
 
 
 class Encode(TestCase):
