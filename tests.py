@@ -57,6 +57,11 @@ class Decode(TestCase):
 
     def test_properly_escapes_colons(self):
         username, password = 'username', 'pass:word:'
-        # client may not have been encoded the way this lib does it
+
+        encoded_str = encode(username, password)
+        self.assertEqual((username, password), decode(encoded_str))
+
+        # This test ensures things work even if the client doesn't properly URL
+        # encode the username / password fields.
         encoded_str = 'Basic %s' % b64encode('%s:%s' % (username, password))
         self.assertEqual((username, password), decode(encoded_str))
