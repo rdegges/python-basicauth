@@ -7,7 +7,7 @@ setup(
 
     # Basic package information:
     name = 'basicauth',
-    version = '0.2',
+    version = '0.3',
     py_modules = ('basicauth',),
 
     # Packaging options:
