@@ -63,5 +63,6 @@ class Decode(TestCase):
 
         # This test ensures things work even if the client doesn't properly URL
         # encode the username / password fields.
-        encoded_str = 'Basic %s' % b64encode('%s:%s' % (username, password))
+        username_password = '%s:%s' % (username, password)
+        encoded_str = 'Basic %s' % b64encode(username_password.encode()).decode()
         self.assertEqual((username, password), decode(encoded_str))
