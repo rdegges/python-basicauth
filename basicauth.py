@@ -3,7 +3,6 @@
 
 from base64 import b64decode, b64encode
 from six.moves.urllib.parse import quote, unquote
-# from urllib import quote, unquote
 
 
 class DecodeError(Exception):
