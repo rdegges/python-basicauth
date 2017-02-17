@@ -14,7 +14,6 @@ setup(
     include_package_data=True,
 
     classifiers=(
-        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Programming Language :: Python',
