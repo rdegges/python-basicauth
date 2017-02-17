@@ -13,7 +13,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
 
-    classifiers=(
+    classifiers=[
         'License :: Public Domain',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
@@ -24,7 +24,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-    ),
+    ],
 
     # Package dependencies:
     install_requires=['six'],
