@@ -1,7 +1,7 @@
 from base64 import b64encode
 from unittest import TestCase
 
-from basicauth import decode, DecodeError, encode
+from basicauth import decode, DecodeError, encode, EncodeError
 
 
 class Encode(TestCase):
@@ -23,6 +23,9 @@ class Encode(TestCase):
 
     def test_encodes_long_password(self):
         self.assertTrue(encode('', 'password'*1000000))
+
+    def test_prevent_colon_char(self):
+        self.assertRaises(EncodeError, lambda: encode(':', 'password'))
 
 
 class Decode(TestCase):
