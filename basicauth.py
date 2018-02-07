@@ -9,10 +9,17 @@ class DecodeError(Exception):
     pass
 
 
+class EncodeError(Exception):
+    pass
+
+
 def encode(username, password):
     """Returns an HTTP basic authentication encrypted string given a valid
     username and password.
     """
+    if ':' in username:
+        raise EncodeError
+
     username_password = '%s:%s' % (quote(username), quote(password))
     return 'Basic ' + b64encode(username_password.encode()).decode()
 
