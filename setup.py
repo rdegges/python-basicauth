@@ -31,9 +31,6 @@ setup(
         'Topic :: Software Development :: Libraries',
     ],
 
-    # Package dependencies:
-    install_requires=['six'],
-
     # Metadata for PyPI:
     author='Randall Degges',
     author_email='r@rdegges.com',
