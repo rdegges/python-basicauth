@@ -1,5 +1,7 @@
 # python-basicauth
 
+[![Build Status](https://github.com/rdegges/python-basicauth/actions/workflows/test.yml/badge.svg)](https://github.com/rdegges/python-basicauth/actions)
+
 A dead simple HTTP basic auth encoder and decoder. Why? Because HTTP should be
 drop dead easy. That's why.
 
@@ -64,8 +66,6 @@ field.  Colons are allowed in the password field -- but that's it.
 
 
 ## Tests
-
-[![Build Status](https://github.com/rdegges/python-basicauth/actions/workflows/test.yml/badge.svg)](https://github.com/rdegges/python-basicauth/actions)
 
 Want to run the tests? No problem:
 
