@@ -36,7 +36,6 @@ setup(
     url='https://github.com/rdegges/python-basicauth',
     keywords='python security basicauth http',
     description='An incredibly simple HTTP basic auth implementation.',
-    long_description=open(normpath(join(dirname(abspath(__file__)),
-                                        'README.md'))).read()
+    long_description=open(normpath(join(dirname(abspath(__file__)), 'README.md'))).read()
 
 )
