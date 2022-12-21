@@ -20,8 +20,8 @@ def encode(username, password):
     if ':' in username:
         raise EncodeError
 
-    username_password = '%s:%s' % (quote(username), quote(password))
-    return 'Basic ' + b64encode(username_password.encode()).decode()
+    username_password = f'{quote(username)}:{quote(password)}'
+    return f'Basic {b64encode(username_password.encode()).decode()}'
 
 
 def decode(encoded_str):
