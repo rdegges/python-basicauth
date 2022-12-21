@@ -65,20 +65,19 @@ field.  Colons are allowed in the password field -- but that's it.
 
 ## Tests
 
-[![Build Status](https://secure.travis-ci.org/rdegges/python-basicauth.png?branch=master)](http://travis-ci.org/rdegges/python-basicauth)
+[![Build Status](https://github.com/rdegges/python-basicauth/actions/workflows/test.yml/badge.svg)](https://github.com/rdegges/python-basicauth/actions)
 
 Want to run the tests? No problem:
 
 ``` bash
-$ git clone git://github.com/rdegges/python-basicauth.git
+$ git clone https://github.com/rdegges/python-basicauth.git
 $ cd python-basicauth
-$ python setup.py develop
+$ pip install -e .
 ...
-$ pip install -r requirements.txt  # Install test dependencies.
-$ nosetests
-.............
+$ python -m unittest
+..............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.166s
+Ran 14 tests in 0.103s
 
 OK
 ```
