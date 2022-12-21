@@ -1,7 +1,7 @@
 # python-basicauth
 
 [![Build Status](https://github.com/rdegges/python-basicauth/actions/workflows/test.yml/badge.svg)](https://github.com/rdegges/python-basicauth/actions)
-[![Known Vulnerabilities](https://snyk.io/test/github/rdegges/python-basicauth/badge.svg)]
+[![Known Vulnerabilities](https://snyk.io/test/github/rdegges/python-basicauth/badge.svg)](https://snyk.io/test/github/rdegges/python-basicauth)
 
 A dead simple HTTP basic auth encoder and decoder. Why? Because HTTP should be
 drop dead easy. That's why.
