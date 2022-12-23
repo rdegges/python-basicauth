@@ -1,2 +1,0 @@
-include http_basic_auth.jpg README.md requirements.txt tests.py UNLICENSE
-recursive-exclude basicauth *.pyc
