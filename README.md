@@ -4,10 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/rdegges/python-basicauth/badge.svg)](https://snyk.io/test/github/rdegges/python-basicauth)
 
 A dead simple HTTP basic auth encoder and decoder. Why? Because HTTP should be
-drop dead easy. That's why.
-
-
-![HTTP Basic Auth?!](https://github.com/rdegges/python-basicauth/raw/master/http_basic_auth.jpg)
+drop dead easy... That's why.
 
 
 ## Install
@@ -38,7 +35,7 @@ To decode an encoded basic auth string:
 ('rdegges', 'omghax!!!')
 ```
 
-We can also decode the hash directly:
+We can also decode the encoded string directly:
 
 ``` python
 >>> from basicauth import decode
@@ -52,7 +49,7 @@ And if there are errors:
 
 ``` python
 >>> from basicauth import decode, DecodeError
->>> encoded_str = 'lol omg cmRlZ2dlczpvbWdoYXglMjElMjElMjE='  # Invalid hash.
+>>> encoded_str = 'lol omg cmRlZ2dlczpvbWdoYXglMjElMjElMjE='  # Invalid encoded string.
 >>> username, password = decode(encoded_str)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -62,8 +59,8 @@ basicauth.DecodeError
 ```
 
 **NOTE**: The [HTTP Basic Authentication spec](http://www.ietf.org/rfc/rfc2617.txt)
-doesn **NOT** allow you to include any colon characters (`:`) in the username
-field.  Colons are allowed in the password field -- but that's it.
+does **NOT** allow you to include any colon characters (`:`) in the username
+field. Colons are allowed in the password field -- but that's it.
 
 
 ## Tests
