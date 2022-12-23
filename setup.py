@@ -7,12 +7,11 @@ setup(
     # Basic package information:
     name='basicauth',
     version='0.4.1',
-    py_modules=('basicauth',),
+    py_modules=['basicauth'],
 
-    # Packaging options:
-    zip_safe=False,
-    include_package_data=True,
-
+    # Metadata for PyPI:
+    author='Randall Degges',
+    author_email='r@rdegges.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
@@ -30,14 +29,12 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Software Development :: Libraries',
     ],
-
-    # Metadata for PyPI:
-    author='Randall Degges',
-    author_email='r@rdegges.com',
-    license='UNLICENSE',
-    url='https://github.com/rdegges/python-basicauth',
-    keywords='python security basicauth http',
     description='An incredibly simple HTTP basic auth implementation.',
-    long_description=open(normpath(join(dirname(abspath(__file__)), 'README.md'))).read()
+    keywords=['security', 'basicauth', 'http'],
+    license='UNLICENSE',
+    license_files=['UNLICENSE'],
+    long_description=open(normpath(join(dirname(abspath(__file__)), 'README.md'))).read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/rdegges/python-basicauth',
 
 )
