@@ -6,7 +6,7 @@ setup(
 
     # Basic package information:
     name='basicauth',
-    version='0.4.1',
+    version='1.0.0',
     py_modules=['basicauth'],
 
     # Metadata for PyPI:
